@@ -10,14 +10,14 @@
 </head>
 <body>
   <header class="header">
-    <div class="wrapper">
+    <div class="wrapper header__wrapper"> <!--добавляем элемент header__wrapper, чтобы к нему установить флексы-->
       <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li>Home</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Product</li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Product</a></li>
         </ul>
       </nav> <!--checked-->
       <div class="header__buttons">
@@ -96,7 +96,7 @@
     </div>
   </section>
   <section class="contact-us">
-    <div class="wrapper">
+    <div class="wrapper"> 
       <h2>Contact Us</h2>
       <div class="layout-2-columns">
         <div class="contact-us__content">
