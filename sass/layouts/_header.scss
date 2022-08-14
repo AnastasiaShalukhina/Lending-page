@@ -10,6 +10,14 @@
   justify-content: space-between;
 }
 
+.header__buttons>.button {
+  margin-left: 14px;
+}
+
+.header__buttons>.button:first-child {
+  margin-left: 0;
+}
+
 .navigation {
   display: flex;
 
@@ -23,6 +31,6 @@
 .navigation__link {
   text-decoration: none;
   color: $color-heading;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
 }
