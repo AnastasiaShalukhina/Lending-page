@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AnastasiaShalukhina/Lending-page/issues"
   },
-  "homepage": "https://github.com/AnastasiaShalukhina/Lending-page#readme"
+  "homepage": "https://github.com/AnastasiaShalukhina/Lending-page#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }
