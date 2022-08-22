@@ -1,8 +1,12 @@
+// abstrcts
 @import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
 
 // base
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
 
 // layouts
 @import "layouts/wrapper";
