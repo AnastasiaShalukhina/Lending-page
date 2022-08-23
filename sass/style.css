@@ -418,7 +418,11 @@ template {
   transition: all ease-out 0.3s;
 }
 
-.promo__text, h1 {
+.button, body {
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+.promo__text, .link-button, h1 {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -427,8 +431,10 @@ html {
 }
 
 body {
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.6rem;
-  font-family: "Open Sans", "Verdana", sans-serif;
+  line-height: 2.6rem;
 }
 
 h1 {
@@ -467,7 +473,6 @@ h5 {
 }
 
 .button {
-  font-family: "Open Sans", "Verdana", sans-serif;
   padding: 11px 25px 13px;
   font-style: normal;
   font-weight: 600;
@@ -496,12 +501,33 @@ h5 {
   border-color: #FF7549;
 }
 
+.link-button {
+  color: #FF9900;
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-button__text {
+  margin-left: 9px;
+}
+
 .logo-svg {
   cursor: pointer;
 }
 
 .logo-svg:hover .logo-path {
   fill: #FF9900;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_play {
+  background-image: url("../../img/icons/play.svg");
+  width: 18px;
+  height: 19px;
 }
 
 .wrapper {
@@ -527,6 +553,24 @@ h5 {
 
 .header__buttons > .button:first-child {
   margin-left: 0;
+}
+
+.layout-4-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-columns > * {
+  flex-basis: 21%;
+}
+
+.layout-3-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-3-columns > * {
+  flex-basis: 30%;
 }
 
 .contact-us {

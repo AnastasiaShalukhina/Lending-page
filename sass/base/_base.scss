@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", "Verdana", sans-serif;
+  @extend %font-primary;
+  @include font($style: normal, $weight: 700, $size: 1.6rem, $height: 2.6rem);
 }
 
 h1 {
