@@ -5,3 +5,7 @@
 .layout-3-columns {
   @include columns($width: 30%);
 }
+
+.layout-2-columns {
+  @include columns($width: 45%);
+}

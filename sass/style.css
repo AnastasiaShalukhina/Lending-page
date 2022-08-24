@@ -524,6 +524,51 @@ h5 {
   display: inline-block;
 }
 
+.icon-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+}
+.icon-square_violet {
+  background-color: #7752BE;
+}
+.icon-square_yellow {
+  background-color: #FAB005;
+}
+.icon-square_red {
+  background-color: #F03E3D;
+}
+.icon-square_blue {
+  background-color: #4DADF7;
+}
+
+.ico_arrow {
+  background-image: url("../../img/icons/arrow.svg");
+  width: 12px;
+  height: 17px;
+}
+
+.ico_design {
+  background-image: url("../../img/icons/design.svg");
+  width: 18px;
+  height: 14px;
+}
+
+.ico_heart {
+  background-image: url("../../img/icons/heart.svg");
+  width: 17px;
+  height: 15px;
+}
+
+.ico_clocks {
+  background-image: url("../../img/icons/clocks.svg");
+  width: 15px;
+  height: 17px;
+}
+
 .ico_play {
   background-image: url("../../img/icons/play.svg");
   width: 18px;
@@ -571,6 +616,15 @@ h5 {
 }
 .layout-3-columns > * {
   flex-basis: 30%;
+}
+
+.layout-2-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-columns > * {
+  flex-basis: 45%;
 }
 
 .contact-us {
@@ -625,6 +679,30 @@ h5 {
 }
 .navigation__link:hover {
   color: #FF9900;
+}
+
+.tools__wraper {
+  padding-bottom: 90px;
+  background-image: url("../../img/backgrounds/tools-bckgr.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+.tools__title {
+  max-width: 462px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.tools__button {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.tool__title {
+  margin: 30px 0 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
