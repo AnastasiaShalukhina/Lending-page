@@ -414,7 +414,7 @@ template {
   display: none;
 }
 
-.navigation__link, .logo-path {
+.footer-navigation__links a, .navigation__link, .logo-path {
   transition: all ease-out 0.3s;
 }
 
@@ -422,7 +422,7 @@ template {
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.footer-navigation__links, .promo__text, .link-button, h1 {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -713,6 +713,7 @@ h5 {
   font-size: 2.5rem;
   line-height: 2.6rem;
   color: #544837;
+  text-decoration: none;
 }
 
 .contact-us__form input, .contact-us__form textarea {
@@ -899,8 +900,32 @@ h5 {
   border-radius: 50%;
 }
 
+.footer {
+  padding: 60px 0 70px;
+}
+
 .footer__wrapper {
   display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+.footer-navigation__links a:hover {
+  cursor: pointer;
+  color: #FF9900;
 }
 
 /*# sourceMappingURL=style.css.map */

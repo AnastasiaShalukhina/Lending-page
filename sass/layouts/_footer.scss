@@ -1,3 +1,28 @@
+.footer {
+  padding: 60px 0 70px;
+}
+
 .footer__wrapper {
   display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+}
+
+.footer-navigation__title {
+  margin:  0 0 15px;
+}
+
+.footer-navigation__links {
+  @extend %font-add;
+  a {
+    color: $color-text;
+    @extend %transition;
+    @include font(normal, 400, 1.6rem, 3.5rem);
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+    }
+  }
 }

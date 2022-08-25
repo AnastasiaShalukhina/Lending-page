@@ -16,6 +16,7 @@
 .contact-us__contacts {
   @include font(normal, 400, 2.5rem, 2.6rem);
   color: $color-text;
+  text-decoration: none;
 }
 
 .contact-us__form {
