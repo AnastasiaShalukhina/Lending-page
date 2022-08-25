@@ -9,24 +9,29 @@ body {
 
 h1 {
   @extend %font-add;
-  @include font(normal, 700, 4.4rem, 5.4rem)
+  @include font(normal, 700, 4.4rem, 5.4rem);
+  color: $color-heading;
 }
 
 h2 {
   // font-family: 'Open Sans', "Verdana", sans-serif; не прописываем, т.к. задали для body
-  @include font(normal, 700, 3.4rem, 4.6rem)
+  @include font(normal, 700, 3.4rem, 4.6rem);
+  color: $color-heading;
 }
 
 h3 {
-  @include font(normal, 700, 2.4rem, 3.4rem)
+  @include font(normal, 700, 2.4rem, 3.4rem);
+  color: $color-heading;
 }
 
 h4 {
-  @include font(normal, 600, 2.2rem, 3.0rem)
+  @include font(normal, 600, 2.2rem, 3.0rem);
+  color: $color-heading;
 }
 
 h5 {
-  @include font(normal, 700, 1.6rem, 2.6rem)
+  @include font(normal, 700, 1.6rem, 2.6rem);
+  color: $color-text;
 }
 
 

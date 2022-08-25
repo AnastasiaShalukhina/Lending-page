@@ -53,3 +53,26 @@
   width: 18px;
   height: 19px;
 }
+
+.contact-us__ico-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 11px 19px 0;
+  border-radius: 50%;
+  background-color: $color-light;
+}
+
+.ico_phone {
+  background-image: url("../../img/icons/phone.svg");
+  width: 7px;
+  height: 11px;
+}
+
+.ico_letter {
+  background-image: url("../../img/icons/mail.svg");
+  width: 11px;
+  height: 8px;
+}

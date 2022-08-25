@@ -3,6 +3,21 @@
   padding: 62px 82px;
 }
 
+.contact-us__text {
+  @include font (normal, 400, 1.6rem, 2.6rem);
+  margin-bottom: 33px;
+  color: $color-text;
+}
+
+.contact-us__data {
+  display: flex;
+}
+
+.contact-us__contacts {
+  @include font(normal, 400, 2.5rem, 2.6rem);
+  color: $color-text;
+}
+
 .contact-us__form {
   input, textarea {
     border: none;

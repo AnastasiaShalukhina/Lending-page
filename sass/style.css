@@ -446,6 +446,7 @@ h1 {
   font-weight: 700;
   font-size: 4.4rem;
   line-height: 5.4rem;
+  color: #2F281E;
 }
 
 h2 {
@@ -453,6 +454,7 @@ h2 {
   font-weight: 700;
   font-size: 3.4rem;
   line-height: 4.6rem;
+  color: #2F281E;
 }
 
 h3 {
@@ -460,6 +462,7 @@ h3 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.4rem;
+  color: #2F281E;
 }
 
 h4 {
@@ -467,6 +470,7 @@ h4 {
   font-weight: 600;
   font-size: 2.2rem;
   line-height: 3rem;
+  color: #2F281E;
 }
 
 h5 {
@@ -474,6 +478,7 @@ h5 {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.6rem;
+  color: #544837;
 }
 
 .button {
@@ -583,6 +588,29 @@ h5 {
   height: 19px;
 }
 
+.contact-us__ico-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 11px 19px 0;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.ico_phone {
+  background-image: url("../../img/icons/phone.svg");
+  width: 7px;
+  height: 11px;
+}
+
+.ico_letter {
+  background-image: url("../../img/icons/mail.svg");
+  width: 11px;
+  height: 8px;
+}
+
 .tags {
   display: flex;
 }
@@ -658,12 +686,33 @@ h5 {
   justify-content: space-between;
 }
 .layout-2-columns > * {
-  flex-basis: 48%;
+  flex-basis: 42%;
 }
 
 .contact-us {
   background-color: #FFEEE1;
   padding: 62px 82px;
+}
+
+.contact-us__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 33px;
+  color: #544837;
+}
+
+.contact-us__data {
+  display: flex;
+}
+
+.contact-us__contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  color: #544837;
 }
 
 .contact-us__form input, .contact-us__form textarea {
@@ -793,6 +842,65 @@ h5 {
 
 .strategy__name {
   margin: 0 0 29px;
+}
+
+.wrapper__about-us {
+  padding-bottom: 101px;
+}
+
+.about-us__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 45px;
+  color: #544837;
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.employee__content {
+  padding: 36px 0 34px 35px;
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #544837;
+}
+
+.employee__mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #1943EF;
+}
+
+.employee__photo-content {
+  position: absolute;
+  left: 80%;
+}
+
+.employee__photo {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+}
+
+.footer__wrapper {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
