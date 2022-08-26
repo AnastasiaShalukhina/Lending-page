@@ -686,12 +686,16 @@ h5 {
   justify-content: space-between;
 }
 .layout-2-columns > * {
-  flex-basis: 42%;
+  flex-basis: 40%;
 }
 
 .contact-us {
   background-color: #FFEEE1;
-  padding: 62px 82px;
+  padding: 62px 0;
+}
+
+.contact-us__content {
+  margin-right: 91px;
 }
 
 .contact-us__text {
@@ -858,10 +862,15 @@ h5 {
   color: #544837;
 }
 
+.employee-container {
+  padding-right: 32px;
+}
+
 .employee {
   display: flex;
   align-items: center;
   position: relative;
+  width: calc(30% - 32px);
 }
 
 .employee__content {
@@ -888,16 +897,21 @@ h5 {
   line-height: 2.6rem;
   color: #1943EF;
 }
+.employee__mail:hover {
+  text-decoration: underline;
+}
 
 .employee__photo-content {
   position: absolute;
-  left: 80%;
+  right: -32px;
+  top: 20px;
 }
 
 .employee__photo {
   width: 98px;
   height: 98px;
   border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .footer {
@@ -910,14 +924,19 @@ h5 {
 
 .footer-navigation {
   flex-grow: 1;
+  padding-left: 152px;
 }
 
 .footer-navigation__title {
   margin: 0 0 15px;
 }
 
+.footer-navigation__links {
+  list-style-type: none;
+}
 .footer-navigation__links a {
   color: #544837;
+  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;

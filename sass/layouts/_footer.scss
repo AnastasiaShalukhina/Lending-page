@@ -8,6 +8,7 @@
 
 .footer-navigation {
   flex-grow: 1;
+  padding-left: 152px;
 }
 
 .footer-navigation__title {
@@ -16,8 +17,10 @@
 
 .footer-navigation__links {
   @extend %font-add;
+  list-style-type: none;
   a {
     color: $color-text;
+    text-decoration: none;
     @extend %transition;
     @include font(normal, 400, 1.6rem, 3.5rem);
     &:hover {

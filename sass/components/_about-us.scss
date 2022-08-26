@@ -1,3 +1,5 @@
+$image-gap: 32px;
+
 .wrapper__about-us {
   padding-bottom: 101px
 }
@@ -8,10 +10,15 @@
   color: $color-text;
 }
 
+.employee-container {
+  padding-right: 32px;
+}
+
 .employee {
   display: flex;
   align-items: center;
   position: relative;
+  width: calc(30% - $image-gap);
 }
 
 .employee__content {
@@ -31,11 +38,15 @@
 .employee__mail {
   @include font (normal, 400, 1.4rem, 2.6rem);
   color: $color-link;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .employee__photo-content {
   position: absolute;
-  left: 80%;
+  right: -$image-gap;
+  top: 20px;
 
 }
 
@@ -43,4 +54,5 @@
   width: 98px;
   height: 98px;
   border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }

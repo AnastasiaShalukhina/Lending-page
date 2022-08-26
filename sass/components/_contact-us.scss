@@ -1,6 +1,10 @@
 .contact-us {
   background-color: $color-backgroundContactUs;
-  padding: 62px 82px;
+  padding: 62px 0;
+}
+
+.contact-us__content {
+  margin-right: 91px;
 }
 
 .contact-us__text {
