@@ -524,6 +524,31 @@ h5 {
   min-width: 117px;
 }
 
+.hamburger__line, .hamburger::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  display: inline-block;
+  background: #173A56;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: inline-block;
+  position: relative;
+  width: 31px;
+  height: 25px;
+}
+.hamburger::before {
+  top: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+  left: 0;
+}
+
 .logo-svg {
   cursor: pointer;
 }
@@ -640,6 +665,11 @@ h5 {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 0 46px;
+  }
 }
 
 .header {
