@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media-tablet {
+    padding-left: 24px;
+  }
 }
 
 .header__buttons>.button {

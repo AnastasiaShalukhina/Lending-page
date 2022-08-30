@@ -12,16 +12,18 @@
 <!-----------------------HEADER------------------------------------>
   <header class="header">
     <div class="wrapper header__wrapper"> <!--добавляем элемент header__wrapper, чтобы к нему установить флексы-->
-      <!-- <div class="header__logo-line"></div>  -->
-        <span class="hamburger">
-          <span class="hamburger__line"></span>
-        </span>
+      <div class="header__logo-line">
+        <div class="hamburger">
+          <div class="hamburger__line"></div>
+        </div>
+        
+        <a href="#" class="logo">
+          <object type="image/svg+xml" data="./img/logo.svg" class="logo-object">
+            Your browser does not support SVG
+          </object>
+        </a>
+      </div> 
       
-      <a href="#" class="logo">
-        <object type="image/svg+xml" data="./img/logo.svg" class="logo-object">
-          Your browser does not support SVG
-        </object>
-      </a>
       <nav class="header__navigation">
         <ul class="navigation">
           <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
