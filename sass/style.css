@@ -561,6 +561,11 @@ h5 {
   left: 0;
 }
 
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
 .logo-svg {
   cursor: pointer;
 }
@@ -707,6 +712,11 @@ h5 {
 
 .header__buttons > .button:first-child {
   margin-left: 0;
+}
+
+.header__logo-line {
+  display: flex;
+  align-items: center;
 }
 
 .layout-4-columns {
