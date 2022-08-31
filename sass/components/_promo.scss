@@ -7,12 +7,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 .promo__content {
   padding-right: 65px;
   @include media-tablet {
     padding-right: 0;
+  }
+  @include media-mobile {
+    text-align: center;
   }
 }
 
@@ -28,6 +34,9 @@
   @include media-tablet {
     width: 380px;
   }
+  @include media-mobile {
+    width: auto;
+  }
 }
 
 .promo__buttons {
@@ -38,5 +47,24 @@
       &:last-child {
         margin-right: 0;
       }
+  }
+  @include media-mobile {
+    flex-direction: column;
+    >* {
+        margin-right: 0;
+        &:last-child {
+          margin-top: 26px;
+        }
+      }
+  }
+}
+
+.promo__img {
+  @include media-tablet {
+    max-width: 592px;
+  }
+  @include media-mobile {
+    max-width: 100%;
+    margin-bottom: 16px;
   }
 }

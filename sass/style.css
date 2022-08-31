@@ -707,6 +707,11 @@ h5 {
     padding: 0 46px;
   }
 }
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 21px;
+  }
+}
 
 .header {
   background-color: #FFFFFF;
@@ -830,6 +835,11 @@ h5 {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 414px) {
+  .promo__wrapper {
+    flex-direction: column-reverse;
+  }
+}
 
 .promo__content {
   padding-right: 65px;
@@ -837,6 +847,11 @@ h5 {
 @media (max-width: 768px) {
   .promo__content {
     padding-right: 0;
+  }
+}
+@media (max-width: 414px) {
+  .promo__content {
+    text-align: center;
   }
 }
 
@@ -857,6 +872,11 @@ h5 {
     width: 380px;
   }
 }
+@media (max-width: 414px) {
+  .promo__text {
+    width: auto;
+  }
+}
 
 .promo__buttons {
   display: flex;
@@ -867,6 +887,29 @@ h5 {
 }
 .promo__buttons > *:last-child {
   margin-right: 0;
+}
+@media (max-width: 414px) {
+  .promo__buttons {
+    flex-direction: column;
+  }
+  .promo__buttons > * {
+    margin-right: 0;
+  }
+  .promo__buttons > *:last-child {
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__img {
+    max-width: 592px;
+  }
+}
+@media (max-width: 414px) {
+  .promo__img {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .navigation {
@@ -921,6 +964,11 @@ h5 {
 .strategies {
   padding: 30px 0;
 }
+@media (max-width: 768px) {
+  .strategies {
+    text-align: center;
+  }
+}
 
 .strateies__title {
   margin: 0 0 14px;
@@ -937,21 +985,47 @@ h5 {
 .strategies__tags {
   margin-bottom: 31px;
 }
-
-.block-shadowed {
-  border-radius: 8px;
+@media (max-width: 768px) {
+  .strategies__tags {
+    justify-content: center;
+  }
 }
 
 .strategy-wrapper > * {
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .strategy-wrapper > * {
+    flex-basis: 48%;
+  }
+}
+
+.strategy {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .strategy {
+    overflow: hidden;
+  }
+}
+
+.block-shadowed {
+  border-radius: 8px;
+}
 
 .strategy__content {
   padding: 24px 33px 26px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .strategy__name {
   margin: 0 0 29px;
+  text-align: left;
+  flex-grow: 1;
 }
 
 .wrapper__about-us {
