@@ -3,6 +3,12 @@
   align-items: center;
 }
 
+.logo-object {
+  @include media-mobile {
+    width: 158px;
+  }
+}
+
 .logo-svg {
   cursor: pointer;
 }

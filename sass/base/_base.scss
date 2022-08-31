@@ -11,6 +11,9 @@ h1 {
   @extend %font-add;
   @include font(normal, 700, 4.4rem, 5.4rem);
   color: $color-heading;
+  @include media-mobile {
+    @include font(normal, 700, 3.2rem, 4.2rem);
+  }
 }
 
 h2 {

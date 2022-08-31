@@ -1,5 +1,6 @@
 .promo {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .promo__wrapper {
@@ -10,6 +11,9 @@
 
 .promo__content {
   padding-right: 65px;
+  @include media-tablet {
+    padding-right: 0;
+  }
 }
 
 .promo__title {
@@ -20,9 +24,19 @@
   max-width: 487px;
   margin: 0 0 45px;
   @extend %font-add;
-  @include font(normal, 400, 1.8rem, 2.8rem)
+  @include font(normal, 400, 1.8rem, 2.8rem);
+  @include media-tablet {
+    width: 380px;
+  }
 }
 
-.promo__buttons>* {
-  margin-right: 44px;
+.promo__buttons {
+  display: flex;
+  align-items: center;
+  >* {
+      margin-right: 44px;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
 }

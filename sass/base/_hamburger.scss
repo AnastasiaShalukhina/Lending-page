@@ -16,6 +16,9 @@
   @include media-tablet {
     display: inline-block;
   }
+  @include media-mobile {
+    margin-right: 61px;
+  }
   &:before {
     @extend %hamburger-line;
     top: 0;
