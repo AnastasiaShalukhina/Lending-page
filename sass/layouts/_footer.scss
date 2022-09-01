@@ -1,14 +1,34 @@
 .footer {
   padding: 60px 0 70px;
+  @include media-mobile {
+    padding: 31px 0;
+  }
 }
 
 .footer__wrapper {
   display: flex;
+  @include media-tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.logo {
+  @include media-tablet {
+    margin-bottom: 34px;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
   padding-left: 152px;
+  @include media-tablet {
+    padding-left: 0;
+    width: 100%;
+  }
+  @include media-mobile {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation__title {
@@ -27,5 +47,8 @@
       cursor: pointer;
       color: $color-primary;
     }
+  }
+  @include media-tablet {
+    padding-left: 0;
   }
 }

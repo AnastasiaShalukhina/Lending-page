@@ -20,11 +20,17 @@ h2 {
   // font-family: 'Open Sans', "Verdana", sans-serif; не прописываем, т.к. задали для body
   @include font(normal, 700, 3.4rem, 4.6rem);
   color: $color-heading;
+  @include media-mobile {
+    @include font(normal, 700, 2.4rem, 3.3rem);
+  }
 }
 
 h3 {
   @include font(normal, 700, 2.4rem, 3.4rem);
   color: $color-heading;
+  @include media-mobile {
+    @include font(normal, 700, 2.1rem, 3.1rem);
+  }
 }
 
 h4 {

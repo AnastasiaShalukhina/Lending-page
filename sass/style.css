@@ -464,6 +464,14 @@ h2 {
   line-height: 4.6rem;
   color: #2F281E;
 }
+@media (max-width: 414px) {
+  h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+  }
+}
 
 h3 {
   font-style: normal;
@@ -471,6 +479,14 @@ h3 {
   font-size: 2.4rem;
   line-height: 3.4rem;
   color: #2F281E;
+}
+@media (max-width: 414px) {
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+  }
 }
 
 h4 {
@@ -530,6 +546,21 @@ h5 {
 
 .contact-us__button > * {
   min-width: 117px;
+}
+@media (max-width: 414px) {
+  .contact-us__button {
+    margin-top: 24px;
+  }
+}
+
+.tools__button {
+  margin-top: 60px;
+  text-align: center;
+}
+@media (max-width: 414px) {
+  .tools__button {
+    margin-top: 0;
+  }
 }
 
 .hamburger__line, .hamburger:after, .hamburger:before {
@@ -779,9 +810,32 @@ h5 {
   background-color: #FFEEE1;
   padding: 62px 0;
 }
+@media (max-width: 768px) {
+  .contact-us {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+}
+
+.contact-us__title {
+  margin: 0 0 17px;
+}
 
 .contact-us__content {
   margin-right: 91px;
+}
+@media (max-width: 768px) {
+  .contact-us__content {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact-us__text {
@@ -805,6 +859,17 @@ h5 {
   color: #544837;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .contact-us__contacts {
+    margin-bottom: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us__contacts-mobile {
+    margin-bottom: 19px;
+  }
+}
 
 .contact-us__form input, .contact-us__form textarea {
   border: none;
@@ -816,13 +881,27 @@ h5 {
   outline: 1px solid #FF9900;
 }
 .contact-us__form textarea {
-  width: 577px;
+  width: 94%;
   height: 159px;
   resize: none;
+}
+@media (max-width: 414px) {
+  .contact-us__form textarea {
+    width: 90%;
+  }
 }
 
 .contact-us__line {
   margin-bottom: 19px;
+}
+@media (max-width: 414px) {
+  .contact-us__line {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .contact-us__line > * {
+    margin-bottom: 19px;
+  }
 }
 
 .promo {
@@ -952,13 +1031,52 @@ h5 {
   margin-bottom: 70px;
 }
 
-.tools__button {
-  margin-top: 60px;
-  text-align: center;
+@media (max-width: 768px) {
+  .tool-container {
+    flex-wrap: wrap;
+  }
+  .tool-container > .tool {
+    flex-basis: 43%;
+  }
+}
+@media (max-width: 414px) {
+  .tool-container {
+    flex-wrap: wrap;
+  }
+  .tool-container > .tool {
+    flex-basis: 100%;
+    margin-bottom: 47px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .tool__title {
   margin: 30px 0 16px;
+}
+@media (max-width: 768px) {
+  .tool__title {
+    margin: 20px 0 6px;
+  }
+}
+@media (max-width: 768px) {
+  .tool__title {
+    margin: 8px 0 0;
+  }
+}
+
+.tool__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .strategies {
@@ -997,6 +1115,11 @@ h5 {
 @media (max-width: 768px) {
   .strategy-wrapper > * {
     flex-basis: 48%;
+  }
+}
+@media (max-width: 414px) {
+  .strategy-wrapper > * {
+    flex-basis: 100%;
   }
 }
 
@@ -1096,14 +1219,42 @@ h5 {
 .footer {
   padding: 60px 0 70px;
 }
+@media (max-width: 414px) {
+  .footer {
+    padding: 31px 0;
+  }
+}
 
 .footer__wrapper {
   display: flex;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-bottom: 34px;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
   padding-left: 152px;
+}
+@media (max-width: 768px) {
+  .footer-navigation {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation__title {
@@ -1124,6 +1275,11 @@ h5 {
 .footer-navigation__links a:hover {
   cursor: pointer;
   color: #FF9900;
+}
+@media (max-width: 768px) {
+  .footer-navigation__links {
+    padding-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
