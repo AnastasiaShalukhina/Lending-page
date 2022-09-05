@@ -1,4 +1,8 @@
 "use strict";
+
+import { Article } from "./js/Article";
+
+// date for pop-up
 const data = [
   {
     id: 1,
@@ -75,6 +79,11 @@ const data = [
   },
 ];
 window.onload = function () {
+  // render Article
+  if (data) {
+    renderArticlesToDom();
+  }
+
   //tags
   addTagsClickHandler();
 };
@@ -124,4 +133,23 @@ const filterStrategyBySelectedTag = (selectedTag) => {
       }
     });
   });
+};
+
+const renderArticlesToDom = () => {
+  let strategiesWrapper = getStrategiesWrapper();
+  console.log(generateArticles(data));
+};
+
+const getStrategiesWrapper = () => {
+  const strategiesContiner = document.querySelector(".strategy-wrapper");
+  strategiesContiner.innerHTML = "";
+  return strategiesContiner;
+};
+
+const generateArticles = (data) => {
+  let articles = [];
+  data.forEach((article) => {
+    articles.push(new Article(article));
+  });
+  return articles;
 };
