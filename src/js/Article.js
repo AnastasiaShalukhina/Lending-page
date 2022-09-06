@@ -1,8 +1,8 @@
 export class Article {
-  constructor({ id, title, urlToImage, tags, ...rest }) {
+  constructor({ id, title, urlToImg, tags, ...rest }) {
     this.id = id;
     this.title = title;
-    this.urlToImage = urlToImage;
+    this.urlToImage = urlToImg;
     this.tags = tags;
   }
 
