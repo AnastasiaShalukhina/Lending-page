@@ -1,6 +1,7 @@
 "use strict";
 
 import { Article } from "./js/Article";
+import { ArticleModal } from "./js/AricleModal";
 import { Modal } from "./js/Modal";
 
 // date for pop-up
@@ -144,6 +145,8 @@ const renderArticlesToDom = () => {
   generateArticles(data).forEach((article) => {
     strategiesWrapper.append(article.generateArticle());
   });
+
+  addStrategyClickHandler();
 };
 
 const getStrategiesWrapper = () => {
@@ -175,4 +178,25 @@ const generateToolsModal = () => {
 const renderModalWindow = (content) => {
   let modal = new Modal("tools-modal");
   modal.buildModal(content);
+};
+
+const addStrategyClickHandler = () => {
+  document.querySelector(".strategy-wrapper").addEventListener("click", (e) => {
+    if (e.target.closest(".strategy")) {
+      let clickedStrategyId = e.target
+        .closest(".strategy")
+        .getAttribute("data-id");
+      let clickedStrategyData = getClickedData(clickedStrategyId);
+      renderArticleModalWindow(clickedStrategyData);
+    }
+  });
+};
+
+const getClickedData = (id) => {
+  return data.find((article) => article.id == id);
+};
+
+const renderArticleModalWindow = (article) => {
+  let modal = new ArticleModal("article-modal", article);
+  modal.renderModal();
 };
